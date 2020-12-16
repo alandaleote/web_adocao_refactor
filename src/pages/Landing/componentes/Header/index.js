@@ -8,7 +8,7 @@ function Header(){
     return (
     <div  id="home" className='container-header'>
         <Navbar bg="dark" variant="dark">
-            <Navbar.Brand href="#home"><img src={Logo} height="100px"></img></Navbar.Brand> 
+            <Navbar.Brand href="home"><img src={Logo} height="100px"></img></Navbar.Brand> 
              <Nav className="mr-auto">
                 <Nav.Link href="#Contato">{NavId.id.contact}</Nav.Link>
                 <Nav.Link href="#About">{NavId.id.about}</Nav.Link>

@@ -1,4 +1,4 @@
-import React, { Component, useEffect, useState} from 'react'
+import React, { Component } from 'react'
 import axios from 'axios'
 import api from '../../../../services/api'
 import Main from '../Main/Main'
@@ -20,6 +20,7 @@ export default class OngCrud extends Component {
     state = { ...initialState }
     componentDidMount() {
         axios.get(`${api}/ong/todos`).then(resp => {
+            console.log(this)
             this.setState({ list: resp.data })
         })
     }
@@ -37,7 +38,7 @@ export default class OngCrud extends Component {
         const ong = this.state.ong
         const method = ong.id ? 'put' : 'post'
         const url = ong.id ? `${api}/ong/atualizar/${ong.id}` : `${api}/ong/adicionar`
-        axios.post(`${api}/ong/adicionar/`, ong)
+        axios[method](url,user)
             .then(resp => {
                 const list = this.getUpdatedList(resp.data)
                 this.setState({ong: initialState.ong, list})
@@ -117,7 +118,7 @@ export default class OngCrud extends Component {
                 <div className="row">
                     <div className="col-12 d-flex justify-content-end">
                         <button className="btn btn-primary" 
-                        onClick={e => this.adicionar(e)}>
+                        onClick={e => this.save(e)}>
                             Salvar
                         </button>
                         <button className="btn btn-secondary ml-2" 
