@@ -1,0 +1,29 @@
+{
+    "gallery": {
+        "title" : "Nossos amigos"
+    },
+    "card1" : {
+        "title" : "Bobg",
+        "content" : "''Foi muito fácil e rápido o atendimento da 5 Marias.''"
+    },
+    "card2" : {
+        "title" : "Bobn",
+        "content" : "''O atendimento foi eficiente e claro desde o primeiro contato.''"
+    },	
+    "card3" : {
+        "title" : "Bobc",
+        "content" : "''Gostaria de agradecer as 5 Marias''"
+    },	
+    "card4" : {	   
+        "title" : "Bobb",	   
+        "content" : "''Serviço exatamente qualificado com profissionais atenciosos.''"      
+    },	   
+    "card5" : {	    
+        "title" : "Bobr",	      
+        "content" : "''Além de recolherem pequenos volumes vcs d�o o destino certo e o valor é justo.''"	        
+    },
+    "card6" : {
+        "title" : "Bobs",
+        "content" : "''Ótimo trabalho! ''"
+    }	     
+}

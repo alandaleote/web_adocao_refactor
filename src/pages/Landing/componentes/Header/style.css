@@ -1,0 +1,31 @@
+.container-header{
+    width: 100%; 
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 5px;
+}
+.bg-dark {
+    background-color: #3b3b3b!important;
+}
+.btn-outline-info {
+    color: #f7f7f7!important;
+    border-color: #f7f7f7!important;
+    width: 150px;
+    padding: 15px;
+    margin-left: 15px;
+}
+.form-inline {
+    color: #ffcc57!important;
+    display: block;
+    flex-flow: row wrap;
+    align-items: center;
+}
+.btn-outline-info:hover {
+    color: #ffcc57;
+    background-color: #f5dea8!important ;
+    border-color: #f7f7f7!important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255);
+}
